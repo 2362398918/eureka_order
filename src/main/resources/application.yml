@@ -1,0 +1,37 @@
+server:
+  port: 8200
+  servlet:
+    context-path: /
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+spring:
+  application:
+    name: order-service
+#  redis:
+#    database: 0
+#    host: 192.168.160.129
+#    port: 6379
+##\u8BBE\u7F6Eribbon\u8D1F\u8F7D\u5747\u8861\u7B56\u7565
+#GOODS-SERVICE:
+#  ribbon:
+#    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+#
+#feign:
+#  client:
+#    config:
+#      default:
+#        connectTimeout: 5000
+#        readTimeout: 5000
+#  hystrix:
+#    enabled: true
+##设置hystrix隔离策略中的延迟时间
+#hystrix:
+#  command:
+#    default:
+#      execution:
+#        isolation:
+#          thread:
+#            timeoutInMilliseconds: 4000
+
